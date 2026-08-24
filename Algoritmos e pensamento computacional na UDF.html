@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowalgoritmo-calculadoras"/>
+        <attribute name="authors" value="ARTHURDEAGUIARSANTOS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-24 10:49:54 "/>
+        <attribute name="created" value="QVJUSFVSREVBR1VJQVJTQU5UT1M7REYwMS1MQUIwNS00NDsyMDI2LTA4LTI0OyIwODoxMzoyMyAiOzM0NTM="/>
+        <attribute name="edited" value="QVJUSFVSREVBR1VJQVJTQU5UT1M7REYwMS1MQUIwNS00NDsyMDI2LTA4LTI0OyIxMDo0OTo1NCAiOzE7MzU2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva a op&#231;&#227;o desejada: 1 - para calculadora de IMC / 2 - para calculadora de &#225;rea&quot;" newline="True"/>
+            <input variable="opcao"/>
+            <if expression="opcao == 1">
+                <then>
+                    <output expression="&quot;Calculadora de IMC&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="opcao == 2">
+                        <then>
+                            <output expression="&quot;Calculadora de &#225;rea&quot;" newline="True"/>
+                            <declare name="areas" type="Integer" array="False" size=""/>
+                            <output expression="&quot;Escolha uma das op&#231;&#245;es de calculo: 1 - Quadrado / 2 - Ret&#226;ngulo / 3- Tri&#226;ngulo / 4 - C&#237;rculo&quot;" newline="True"/>
+                            <input variable="areas"/>
+                            <if expression="areas == 1">
+                                <then>
+                                    <declare name="quadrado" type="Real" array="False" size=""/>
+                                    <output expression="&quot;Digite um valor para lado: &quot;" newline="True"/>
+                                    <input variable="quadrado"/>
+                                    <assign variable="quadrado" expression="quadrado * quadrado"/>
+                                    <output expression="&quot;&#193;rea: &quot;&amp; quadrado &amp;&quot;.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="areas == 2">
+                                        <then>
+                                            <declare name="retangulo" type="Real" array="False" size=""/>
+                                            <declare name="base, altura" type="Real" array="False" size=""/>
+                                            <output expression="&quot;digite um valor para a base:&quot;" newline="True"/>
+                                            <input variable="base"/>
+                                            <output expression="&quot;digite um valor para  altura: &quot;" newline="True"/>
+                                            <input variable="altura"/>
+                                            <assign variable="retangulo" expression="base * altura"/>
+                                            <output expression="&quot;area: &quot;&amp; retangulo &amp;&quot; &quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="areas == 3">
+                                                <then>
+                                                    <declare name="triangulo" type="Real" array="False" size=""/>
+                                                    <declare name="base, altura" type="Real" array="False" size=""/>
+                                                    <output expression="&quot;Digite um valor para a base:&quot;" newline="True"/>
+                                                    <input variable="base"/>
+                                                    <output expression="&quot;Digite um valor para a altura:&quot;" newline="True"/>
+                                                    <input variable="altura"/>
+                                                    <assign variable="triangulo" expression="base * altura / 2"/>
+                                                    <output expression="&quot;area: &quot;&amp; triangulo &amp; &quot;&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="areas == 4">
+                                                        <then>
+                                                            <declare name="circulo" type="Real" array="False" size=""/>
+                                                            <declare name="raio" type="Real" array="False" size=""/>
+                                                            <output expression="&quot;Digite um valor para o raio:&quot;" newline="True"/>
+                                                            <input variable="raio"/>
+                                                            <assign variable="circulo" expression="3.14 * (raio * raio)"/>
+                                                            <output expression="&quot;area: &quot;&amp; circulo &amp; &quot;&quot;" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;A op&#231;&#227;o n&#227;o existe&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <declare name="peso, altura, imc" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite seu peso (Kg): &quot;" newline="True"/>
+            <input variable="peso"/>
+            <output expression="&quot;Digite a sua altura (m): &quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="imc" expression="peso / (altura * altura)"/>
+            <if expression="imc &lt; 18.5">
+                <then>
+                    <output expression="&quot;IMC: &quot;&amp; imc &amp;&quot; - Abaixo do peso&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="imc &lt; 25.0">
+                        <then>
+                            <output expression="&quot;IMC: &quot; &amp; imc &amp; &quot; - Peso ideal&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="imc &lt; 30.0">
+                                <then>
+                                    <output expression="&quot;IMC: &quot; &amp; imc &amp; &quot; - Sobrepeso&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;IMC: &quot; &amp; imc &amp; &quot; - Obesidade&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
