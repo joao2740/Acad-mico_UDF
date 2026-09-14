@@ -1,0 +1,27 @@
+=================================================
+ SISTEMA INTELIGENTE DE MONITORAMENTO INDUSTRIAL
+=================================================
+
+Informe o limite de temperatura de seguranca (C): >> Entrada invalida! Digite um valor numerico.
+
+Informe o limite de temperatura de seguranca (C): 
+Limite definido: 10.00 C
+Digite as temperaturas lidas pelo sensor, uma por vez.
+Digite -999 a qualquer momento para encerrar manualmente.
+
+Temperatura #1: >> Entrada invalida! Digite um valor numerico.
+Temperatura #1:  -> ALERTA: temperatura acima do limite! (1 consecutiva(s))
+Temperatura #2: >> Valor fora da faixa aceitavel (-50 a 200 C). Tente novamente.
+Temperatura #2:  -> ALERTA: temperatura acima do limite! (2 consecutiva(s))
+Temperatura #3: 
+Encerramento manual solicitado pelo usuario.
+
+================== RELATORIO FINAL ==================
+Limite configurado........: 10.00 C
+Total de leituras.........: 2
+Temperatura media.........: 27.50 C
+Maior temperatura.........: 30.00 C
+Menor temperatura.........: 25.00 C
+Leituras acima do limite..: 2 (100.0%)
+Encerramento automatico...: NAO
+======================================================
