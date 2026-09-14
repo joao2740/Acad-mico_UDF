@@ -2,7 +2,7 @@
 
 ## 1. Identificação
 
-- **Nome do aluno:** _[preencher com seu nome completo]_
+- **Nome do aluno:** João Vitor Lino Teixeira 
 - **Disciplina:** Programação em C
 - **Professora:** Profa. Karla Sartin
 - **Título do projeto:** Sistema Inteligente de Monitoramento Industrial
