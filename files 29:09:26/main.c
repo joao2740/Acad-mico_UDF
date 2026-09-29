@@ -1,7 +1,4 @@
-/*
- * Atividade: Vetores em C
- * Estudante: [SEU NOME COMPLETO] - RA/Matrícula: [SEU RA]
- *
+
  * O programa lê 20 números inteiros e calcula:
  *  - soma dos múltiplos de 3
  *  - média dos números pares
