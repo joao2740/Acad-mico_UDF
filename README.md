@@ -1,97 +1,34 @@
-# Cadastro de Equipamentos em C
+# Algoritmos e Pensamento Computacional
 
-Atividade da disciplina de Desenvolvimento de Algoritmos e Programação em C, do curso de TI do UDF – Centro Universitário do Distrito Federal.
+**Aluno:** João Vitor
+**Professora:** Karla
 
-## Descrição
+---
 
-Este projeto consiste em um sistema simples de cadastro de equipamentos em linguagem C. O programa permite ao usuário inserir dados de equipamentos, armazená-los em um arquivo de texto e listá-los posteriormente na tela.
+## Ementa
 
-## Objetivo
+Desenvolvimento de lógica de programação. Resolução de problemas aplicando algoritmos.
 
-Praticar a manipulação de arquivos em linguagem C, além de reforçar conceitos como:
+## Objetivos
 
-- entrada e saída de dados;
-- uso de funções;
-- leitura e gravação em arquivos;
-- estrutura de um programa em console.
+### Cognitivos
 
-## Funcionalidades
+- Compreender os princípios básicos do pensamento lógico e sua importância na resolução de problemas, de diferentes áreas, de forma computacional.
 
-- Cadastrar um novo equipamento;
-- Informar código, nome, local/setor e estado;
-- Salvar os dados em um arquivo chamado `equipamentos.txt`;
-- Listar todos os equipamentos cadastrados;
-- Encerrar o programa.
+### Habilidades
 
-## Conceitos praticados
+- Aplicar os conceitos de lógica proposicional para desenvolver soluções lógicas em algoritmos e estruturas de controle.
+- Interpretar e elaborar algoritmos simples utilizando pseudocódigo como ferramenta de representação lógica.
+- Elaborar algoritmos simples em linguagem C.
 
-| Conceito | Descrição |
-|---|---|
-| `FILE` | Representa um arquivo em C |
-| `fopen()` | Abre um arquivo |
-| `fgets()` | Lê uma linha do arquivo ou do teclado |
-| `fprintf()` | Escreve dados em um arquivo |
-| `fclose()` | Fecha o arquivo |
-| `strtok()` | Separa strings por delimitadores |
-| `"a"` | Abre o arquivo em modo de acréscimo |
-| `"r"` | Abre o arquivo em modo de leitura |
+### Atitudes
 
-## Como executar
+#### Experimentação
 
-### Compilar no terminal
+- Tradução de uma rotina da vida cotidiana na forma de algoritmo.
+- Experimentação e avaliação de diferentes algoritmos de rotinas.
 
-```bash
-gcc -Wall -o cadastro cadastro_equipamentos.c
-./cadastro
-```
+#### Resolução de problema
 
-### Windows
-
-No Windows, o executável gerado pode ser chamado de `cadastro.exe`.
-
-## Exemplo de uso
-
-```text
-===== CADASTRO DE EQUIPAMENTOS =====
-1 - Cadastrar equipamento
-2 - Listar equipamentos
-0 - Sair
-Escolha: 1
-
---- Novo equipamento ---
-Codigo: PC001
-Nome: Notebook Dell
-Local/Setor: Laboratorio 2
-Estado (Novo/Bom/Manutencao): Bom
-Equipamento salvo com sucesso!
-```
-
-## Formato do arquivo
-
-Os dados s��o gravados em `equipamentos.txt` em um formato por linha, com os campos separados por ponto e vírgula:
-
-```text
-PC001;Notebook Dell;Laboratorio 2;Bom
-PJ002;Projetor Epson;Sala 5;Manutencao
-```
-
-## Estrutura do projeto
-
-```text
-.
-├── cadastro_equipamentos.c
-├── equipamentos.txt
-└── README.md
-```
-
-## Observações
-
-- O programa usa o modo `"a"` para não apagar os registros já gravados.
-- O caractere `;` é usado como separador entre os campos, então é recomendado não utilizá-lo nos textos digitados.
-- O arquivo `equipamentos.txt` é criado automaticamente quando o primeiro cadastro é realizado.
-
-## Autor
-
-João Victor
-
-Curso de TI – UDF
+- Resolver um problema comum do ambiente profissional, utilizando algoritmos simples escritos em pseudocódigo.
+- Resolver um problema comum do ambiente profissional, utilizando algoritmos simples escritos em linguagem C.
