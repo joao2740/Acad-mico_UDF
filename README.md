@@ -1,156 +1,97 @@
-# 💻 Algoritmos e Pensamento Computacional
+# Cadastro de Equipamentos em C
 
-![Linguagem](https://img.shields.io/badge/Linguagem-C-blue?style=flat-square)
-![Instituição](https://img.shields.io/badge/Institui%C3%A7%C3%A3o-UDF-red?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Em%20andamento-brightgreen?style=flat-square)
-![Licença](https://img.shields.io/badge/Licença-MIT-lightgrey?style=flat-square)
+Atividade da disciplina de Desenvolvimento de Algoritmos e Programação em C, do curso de TI do UDF – Centro Universitário do Distrito Federal.
 
-> Repositório de estudos, exercícios e projetos da disciplina **Algoritmos e Pensamento Computacional**, ministrada pela **Professora Karla** na **UDF - Centro Universitário do Distrito Federal**.
+## Descrição
 
----
+Este projeto consiste em um sistema simples de cadastro de equipamentos em linguagem C. O programa permite ao usuário inserir dados de equipamentos, armazená-los em um arquivo de texto e listá-los posteriormente na tela.
 
-## 📑 Sumário
+## Objetivo
 
-- [Sobre a Disciplina](#-sobre-a-disciplina)
-- [Objetivos Gerais](#-objetivos-gerais)
-- [Conteúdo Programático](#-conteúdo-programático)
-- [Ferramentas Utilizadas](#️-ferramentas-utilizadas)
-- [Metodologia](#-metodologia)
-- [Competências Desenvolvidas](#-competências-desenvolvidas-ao-final-da-disciplina)
-- [Estrutura do Repositório](#-estrutura-do-repositório)
-- [Como Executar os Códigos](#-como-executar-os-códigos)
-- [Docente Responsável](#-docente-responsável)
+Praticar a manipulação de arquivos em linguagem C, além de reforçar conceitos como:
 
----
+- entrada e saída de dados;
+- uso de funções;
+- leitura e gravação em arquivos;
+- estrutura de um programa em console.
 
-## 📌 Sobre a Disciplina
+## Funcionalidades
 
-Esta disciplina tem como propósito desenvolver nos estudantes as competências fundamentais do **raciocínio lógico-computacional**, formando a base para toda a jornada acadêmica e profissional em tecnologia da informação. Através do estudo de algoritmos e da linguagem C, os alunos aprendem a transformar problemas do mundo real em soluções computacionais estruturadas, eficientes e escaláveis.
+- Cadastrar um novo equipamento;
+- Informar código, nome, local/setor e estado;
+- Salvar os dados em um arquivo chamado `equipamentos.txt`;
+- Listar todos os equipamentos cadastrados;
+- Encerrar o programa.
 
----
+## Conceitos praticados
 
-## 🎯 Objetivos Gerais
+| Conceito | Descrição |
+|---|---|
+| `FILE` | Representa um arquivo em C |
+| `fopen()` | Abre um arquivo |
+| `fgets()` | Lê uma linha do arquivo ou do teclado |
+| `fprintf()` | Escreve dados em um arquivo |
+| `fclose()` | Fecha o arquivo |
+| `strtok()` | Separa strings por delimitadores |
+| `"a"` | Abre o arquivo em modo de acréscimo |
+| `"r"` | Abre o arquivo em modo de leitura |
 
-Desenvolver competências abrangentes em algoritmos e pensamento computacional, capacitando os estudantes a:
+## Como executar
 
-- Aplicar **raciocínio lógico-matemático** para resolver problemas computacionais;
-- Dominar os **fundamentos da linguagem C**, incluindo estruturas de controle e manipulação de dados;
-- Implementar **estruturas de dados eficientes** e técnicas de **modularização de código**;
-- Analisar e implementar **algoritmos de ordenação**, considerando complexidade e aplicabilidade;
-- Estabelecer fundamentos sólidos para especialização em áreas como:
-  - Desenvolvimento de Sistemas;
-  - Inteligência Artificial;
-  - Computação Científica;
-  - Engenharia de Software;
+### Compilar no terminal
 
-Preparando, assim, profissionais completos e aptos a criar soluções algorítmicas eficientes e escaláveis no mercado atual de tecnologia da informação.
-
----
-
-## 🧠 Conteúdo Programático
-
-### 1. Fundamentos do Pensamento Computacional
-- Introdução à lógica de programação;
-- Decomposição de problemas;
-- Reconhecimento de padrões;
-- Abstração e generalização de soluções;
-- Construção de algoritmos (fluxogramas e pseudocódigo).
-
-### 2. Fundamentos da Linguagem C
-- Sintaxe básica, variáveis e tipos de dados;
-- Operadores aritméticos, relacionais e lógicos;
-- Entrada e saída de dados (`scanf`, `printf`);
-- Estruturas de controle:
-  - Condicionais (`if`, `else`, `switch`);
-  - Repetição (`for`, `while`, `do-while`);
-
-### 3. Estruturas de Dados
-- Vetores (arrays) e matrizes;
-- Strings e manipulação de caracteres;
-- Structs (registros);
-- Ponteiros e alocação de memória;
-- Introdução a listas e estruturas dinâmicas.
-
-### 4. Modularização
-- Funções: definição, parâmetros e retorno;
-- Escopo de variáveis;
-- Passagem por valor e por referência;
-- Boas práticas de organização de código.
-
-### 5. Algoritmos de Ordenação e Busca
-- Bubble Sort;
-- Selection Sort;
-- Insertion Sort;
-- Introdução a algoritmos mais eficientes (Merge Sort, Quick Sort);
-- Busca sequencial e busca binária;
-- Análise de complexidade (introdução à notação Big O).
-
----
-
-## 🛠️ Ferramentas Utilizadas
-
-- Linguagem de programação **C**
-- Compilador (GCC / Code::Blocks / Dev-C++ / Online IDEs)
-- Ambiente de desenvolvimento (VS Code recomendado)
-
----
-
-## 📚 Metodologia
-
-- Aulas expositivas e dialogadas;
-- Exercícios práticos de fixação;
-- Estudos de caso e resolução de problemas;
-- Projetos práticos aplicando os conceitos estudados;
-- Avaliações teóricas e práticas.
-
----
-
-## ✅ Competências Desenvolvidas ao Final da Disciplina
-
-- Capacidade de estruturar e resolver problemas computacionais de forma lógica;
-- Domínio da linguagem C como base para outras linguagens;
-- Habilidade de implementar e escolher estruturas de dados adequadas;
-- Compreensão de algoritmos de ordenação e sua aplicabilidade prática;
-- Base sólida para disciplinas avançadas do curso.
-
----
-
-## 📁 Estrutura do Repositório
-
+```bash
+gcc -Wall -o cadastro cadastro_equipamentos.c
+./cadastro
 ```
-📦 algoritmos-pensamento-computacional
-├── 📂 aulas/              # Anotações e materiais das aulas
-├── 📂 exercicios/         # Exercícios resolvidos em C
-├── 📂 estruturas-de-dados/  # Vetores, structs, ponteiros
-├── 📂 ordenacao-busca/    # Bubble, Selection, Insertion, Busca Binária
-├── 📂 projetos/           # Projetos práticos da disciplina
+
+### Windows
+
+No Windows, o executável gerado pode ser chamado de `cadastro.exe`.
+
+## Exemplo de uso
+
+```text
+===== CADASTRO DE EQUIPAMENTOS =====
+1 - Cadastrar equipamento
+2 - Listar equipamentos
+0 - Sair
+Escolha: 1
+
+--- Novo equipamento ---
+Codigo: PC001
+Nome: Notebook Dell
+Local/Setor: Laboratorio 2
+Estado (Novo/Bom/Manutencao): Bom
+Equipamento salvo com sucesso!
+```
+
+## Formato do arquivo
+
+Os dados s��o gravados em `equipamentos.txt` em um formato por linha, com os campos separados por ponto e vírgula:
+
+```text
+PC001;Notebook Dell;Laboratorio 2;Bom
+PJ002;Projetor Epson;Sala 5;Manutencao
+```
+
+## Estrutura do projeto
+
+```text
+.
+├── cadastro_equipamentos.c
+├── equipamentos.txt
 └── README.md
 ```
 
----
+## Observações
 
-## ▶️ Como Executar os Códigos
+- O programa usa o modo `"a"` para não apagar os registros já gravados.
+- O caractere `;` é usado como separador entre os campos, então é recomendado não utilizá-lo nos textos digitados.
+- O arquivo `equipamentos.txt` é criado automaticamente quando o primeiro cadastro é realizado.
 
-Compilando e executando um arquivo `.c` via terminal (GCC):
+## Autor
 
-```bash
-# Compilar
-gcc nome_do_arquivo.c -o programa
+João Victor
 
-# Executar
-./programa
-```
-
-Ou utilizando o **VS Code** com a extensão *C/C++* e *Code Runner*.
-
----
-
-## 👩‍🏫 Docente Responsável
-
-**Professora Karla**
-Disciplina: Algoritmos e Pensamento Computacional
-UDF - Centro Universitário do Distrito Federal
-
----
-
-*Este material tem fins educacionais e serve como referência de apoio ao conteúdo ministrado em sala de aula.*
+Curso de TI – UDF
